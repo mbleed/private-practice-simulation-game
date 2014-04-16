@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Private Practice Simulation</title>
+
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <link href="css/dashboard2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a href="navbar-brand" href="#" title="Home" rel="home">
+<h4 class="site-title">Private Practice Simulation Game</h4>
+</a></div>
+<div class="clearfix"></div>
+<div class="collapse navbar-collapse">
+<ul class="nav nav-stacked" id="menu-bar">
+	<li><a href="index2.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+	<li class="panel dropdown">
+		<a data-toggle="collapse" data-parent="#menu-bar" href="#collapseA"><i class="glyphicon glyphicon-list-alt"></i> Production Reports</a>
+		<ul id="collapseA" class="panel-collapse collapse"> <!-- ID of this element must match the href <a> above it. -->
+			<li><a href="#">Clinic</a></li>
+			<li><a href="#">Team</a></li>
+			<li><a href="#">Vertical</a></li>
+			<li><a href="#">Individual</a></li>
+		</ul>
+	</li>
+	<li class="panel dropdown">
+		<a data-toggle="collapse" data-parent="#menu-bar" href="#collapseB"><i class="glyphicon glyphicon-stats"></i> Goals</a>
+		<ul id="collapseB" class="panel-collapse collapse"> <!-- ID of this element must match the href <a> above it. -->
+			<li><a href="#">Clinic</a></li>
+			<li><a href="#">Team</a></li>
+			<li><a href="#">Vertical</a></li>
+			<li><a href="#">Individual</a></li>
+			<li><a href="#">Participant Level</a></li>
+		</ul>
+	</li>
+	<li class="panel dropdown">
+		<a data-toggle="collapse" data-parent="#menu-bar" href="#collapseC"><i class="glyphicon glyphicon-user"></i> Team Builder</a>
+		<ul id="collapseC" class="panel-collapse collapse"> <!-- ID of this element must match the href <a> above it. -->
+			<li><a href="#">Add Class to Teams</a></li>
+			<li><a href="#">Adjust Team Membership</a></li>
+		</ul>
+	</li>
+	<li class="panel dropdown">
+		<a data-toggle="collapse" data-parent="#menu-bar" href="#collapseD"><i class="glyphicon glyphicon-cog"></i> Parameter Adjustments</a>
+		<ul id="collapseD" class="panel-collapse collapse"> <!-- ID of this element must match the href <a> above it. -->
+			<li><a href="#">Expense Setup</a></li>
+			<li><a href="#">Business Rules</a></li>
+			<li><a href="#">Timelines</a></li>
+			<li><a href="#">Simulated Practice Settings</a></li>
+		</ul>
+	</li>
+	<li class="panel dropdown">
+		<a data-toggle="collapse" data-parent="#menu-bar" href="#collapseE"><i class="glyphicon glyphicon-asterisk"></i> Assignments</a>
+		<ul id="collapseE" class="panel-collapse collapse"> <!-- ID of this element must match the href <a> above it. -->
+			<li><a href="#">List Assigned Entries into System</a></li>
+			<li><a href="#">Team</a></li>
+			<li><a href="#">Vertical</a></li>
+			<li><a href="#">Individual</a></li>
+			<li><a href="#">Add New</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="container">
+	Content
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/placeholder_images.js"></script>
+<script type="text/javascript">
+(function($) {
+    var $window = $(window),
+        $html = $('#menu-bar');
+
+    $window.resize(function resize() {
+        if ($window.width() < 768) {
+           return $html.removeClass('nav-stacked');
+        }
+        $html.addClass('nav-stacked');
+    }).trigger('resize');
+})(jQuery);
+</script>
+  </body>
+</html>
